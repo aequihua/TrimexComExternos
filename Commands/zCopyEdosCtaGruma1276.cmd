@@ -1,0 +1,1 @@
+cscript.exe V:\usr\sap\MXP\SYS\exe\nuc\NTAMD64\zCopyEdosCtaGruma1276.vbs

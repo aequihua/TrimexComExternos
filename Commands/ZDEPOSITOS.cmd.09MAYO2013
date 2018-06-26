@@ -1,0 +1,7 @@
+@echo off
+echo Copia archivo ind_depositos.txt al servidor \\grumA1011\dm_fuentes
+echo.
+w:
+cd w:\interfaces\sd\Datamart
+copy W:\interfaces\sd\Datamart\ind_depositos.txt \\grumA1011\dm_fuentes
+

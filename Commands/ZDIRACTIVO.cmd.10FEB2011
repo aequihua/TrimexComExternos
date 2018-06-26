@@ -1,0 +1,7 @@
+@echo off
+echo Copia archivo altas.txt y bajas.txt al servidor RIOPLATA11
+echo.
+w:
+cd w:\interfaces\HR
+copy w:\interfaces\hr\altas.txt \\rioplata11.gruma.com\SAPInterface\
+copy w:\interfaces\hr\bajas.txt \\rioplata11.gruma.com\SAPInterface\

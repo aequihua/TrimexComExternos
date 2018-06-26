@@ -1,0 +1,9 @@
+@echo off
+echo Copia archivo DocumentosContables.txt al servidor GRUMA1011
+echo.
+w:
+cd W:\interfaces\MM\
+copy \\cimxp.mx.gruma.com\sapdata\interfaces\MM\DocumentosContables.txt \\gruma1011\datamart\Fuentes\Costos /Z
+echo Termina Copia archivo DocumentosContables.txt al servidor GRUMA1011
+echo.
+

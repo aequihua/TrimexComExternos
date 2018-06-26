@@ -1,0 +1,6 @@
+@echo off
+echo Copia COBRANZAMES1_4.
+echo.
+W:
+copy cartera_COBRANZAMES1_4.txt \\172.31.1.18\EntradaBDSinergian\cartera_COBRANZAMES1_4.txt
+echo Fin copia archivos COBRANZAMES1_4.

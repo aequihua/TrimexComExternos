@@ -1,12 +1,12 @@
 @echo off
-echo * Copia archivoS a \\gruma1011\datamart\fuentes\sil *
+echo * Copia archivoS a \\gtmxbi00.molmex.local\dm_SIL\Fuentes *
 echo.
 
 set Archivos=inventarios.txt
 
-set Destino=\\gruma1011.grumamex.com\Datamart\fuentes\sil
+set Destino=\\gtmxbi00.molmex.local\dm_SIL\Fuentes
 
-for %%i in ( %Archivos% ) do if not exist \\sapdatamx\sapdata\interfaces\mm\%%i echo %%i no encontrado
-for %%i in ( %Archivos% ) do if exist \\sapdatamx\sapdata\interfaces\mm\%%i copy \\sapdatamx\sapdata\interfaces\mm\%%i %Destino%
+for %%i in ( %Archivos% ) do if not exist \\txp\sapdata\interfaces\mm\%%i echo %%i no encontrado
+for %%i in ( %Archivos% ) do if exist \\txp\sapdata\interfaces\mm\%%i copy \\txp\sapdata\interfaces\mm\%%i %Destino%
 
 

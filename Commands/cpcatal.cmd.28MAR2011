@@ -1,0 +1,26 @@
+@echo off
+echo Copia archivos de SICF_Catalogos.
+echo.
+w:
+cd w:\interfaces\fi\if044\newdata
+copy w:sicfceco.txt \\delta19.gruma.com\DM_Finanzas
+copy w:sicfctas.txt \\delta19.gruma.com\DM_Finanzas
+copy w:sicfcmat.txt \\delta19.gruma.com\DM_Finanzas
+copy w:sicfcebe.txt \\delta19.gruma.com\DM_Finanzas
+copy w:sicfcebe02.txt \\delta19.gruma.com\DM_Finanzas
+copy w:sicfsoci.txt \\delta19.gruma.com\DM_Finanzas
+if exist \\delta19.gruma.com\DM_Finanzas\sicfsoci.txt (
+  echo.
+  echo Archivos copiados.
+  move sicfceco.txt ..\sicf_catal
+  move sicfctas.txt ..\sicf_catal
+  move sicfcmat.txt ..\sicf_catal
+  move sicfcebe.txt ..\sicf_catal
+  move sicfcebe02.txt ..\sicf_catal
+  move sicfsoci.txt ..\sicf_catal
+) else (
+echo.
+echo ERROR == Archivos no copiados.
+)
+echo Fin copia archivos de corporativo
+

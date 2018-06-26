@@ -1,0 +1,1 @@
+cscript.exe E:\info\scripts\bin\CopiaArchivoSAPVaricent\CopiaArchivoSAPVaricent.vbs

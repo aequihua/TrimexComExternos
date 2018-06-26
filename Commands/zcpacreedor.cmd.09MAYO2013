@@ -1,0 +1,14 @@
+@echo off
+echo Copia archivos acreedores FI.
+echo.
+w:
+cd w:\interfaces\fi\
+if not exist acreedores.txt goto ERROR
+copy w:acreedores.txt \\gruma1023.grumamex.com\ftproot$\CargaAcreedores.txt
+move w:acreedores.txt .\archive
+goto Fin
+:Error
+ echo No exite el archivo acreedores.txt
+:Fin
+echo.
+echo Fin comando.

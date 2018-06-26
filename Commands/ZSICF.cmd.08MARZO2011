@@ -1,0 +1,6 @@
+@echo off
+echo Copia archivo SICF* al servidor DELTA19
+echo.
+w:
+cd W:\interfaces\fi\Corporativo
+copy W:\interfaces\fi\Corporativo\sicf*.txt \\delta19.gruma.com\DM_Finanzas\Corporativo\Fuentes /Z

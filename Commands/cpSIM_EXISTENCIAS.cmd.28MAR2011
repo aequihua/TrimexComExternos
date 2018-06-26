@@ -1,0 +1,8 @@
+@echo off
+echo Mueve archivo existencias.txt a delta19
+echo.
+w:
+cd w:\interfaces\MM
+move existencias.txt  \\DELTA19.gruma.com\Datamart\Fuentes\SIM
+echo.
+echo Fin Mueve archivo existencias.txt a delta19

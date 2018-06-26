@@ -1,0 +1,6 @@
+@echo off
+echo * Copia archivo clientes_gral_his.txt y clientes_ventas_his.txt a \\gruma1011\datamart\fuentes*
+echo.
+
+copy \\sapdatamx\sapdata\interfaces\sd\datamart\clientes_gral_his.txt \\delta19\Datamart\fuentes
+copy \\sapdatamx\sapdata\interfaces\sd\datamart\clientes_ventas_his.txt \\delta19\Datamart\fuentes

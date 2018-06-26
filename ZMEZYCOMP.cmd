@@ -1,4 +1,4 @@
 @echo off
-echo Copia archivo SIMT_CU al servidor GRUMA1011
+echo Copia archivo SIMT_CU al servidor GTMXBI00
 echo.
-copy /Z \\sapdatamx\sapdata\interfaces\MM\zmezycomp.txt \\gruma1011.grumamex.com\datamart\fuentes\simt 
+copy \\txp\sapdata\interfaces\MM\zmezycomp.txt \\gtmxbi00.molmex.local\dm_SIM\Fuentes /Z

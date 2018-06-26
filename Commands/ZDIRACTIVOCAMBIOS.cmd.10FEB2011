@@ -1,0 +1,6 @@
+@echo off
+echo Copia archivo cambios.txt al servidor RIOPLATA11
+echo.
+w:
+cd w:\interfaces\HR
+copy w:\interfaces\hr\cambios.txt \\rioplata11.gruma.com\SAPInterface\

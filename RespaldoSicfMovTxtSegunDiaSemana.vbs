@@ -6,8 +6,8 @@
 ' DATE  : 25/09/2012.
 '
 ' Logica: Según el día en qu el job BI_TODASPTAS-CUBO-MENSUAL genera el archivo SICF_MOV.TXT guardarlo en calidad de respaldo en la carpeta:
-'         \\GTMXQAS00\sapdata\interfaces\fi\archive\Lunes\SICF_MOV.LUN
-'         \\GTMXQAS00\sapdata\interfaces\fi\archive\Lunes\SICF_MOV.MAr ==> etc.
+'         \\TXP\sapdata\interfaces\fi\archive\Lunes\SICF_MOV.LUN
+'         \\TXP\sapdata\interfaces\fi\archive\Lunes\SICF_MOV.MAr ==> etc.
 '
 '         En caso que el porgrama zcpD19.cmd no pueda efectuar alguna de las copias de archivo que realiza, notificar el error por medio de mail. 
 '
@@ -38,14 +38,14 @@ Const ForReading   = 1 'Acción para buscar errores en el archivo LogConexionFTP.
 Dim RespaldoDomingo, RespaldoLunes, RespaldoMartes, RespaldoMiercoles, RespaldoJueves, RespaldoViernes, RespaldoSabado, ArchivoEnArchive, RespaldoDiariOK
 Dim strFile, Verificafecha, LogFile, strLog, WshShell, objFSO1, myweekday, TextLineToAppend 
 
-ArchivoEnArchive  = "\\GTMXQAS00\sapdata\interfaces\fi\archive\SICF_MOV.txt"
-RespaldoDomingo   = "\\GTMXQAS00\sapdata\interfaces\fi\archive\Domingo\SICF_MOV.Dom"
-RespaldoLunes     = "\\GTMXQAS00\sapdata\interfaces\fi\archive\Lunes\SICF_MOV.Lun"
-RespaldoMartes    = "\\GTMXQAS00\sapdata\interfaces\fi\archive\Martes\SICF_MOV.Mar"
-RespaldoMiercoles = "\\GTMXQAS00\sapdata\interfaces\fi\archive\Miercoles\SICF_MOV.Mie"
-RespaldoJueves    = "\\GTMXQAS00\sapdata\interfaces\fi\archive\Jueves\SICF_MOV.Jue"
-RespaldoViernes   = "\\GTMXQAS00\sapdata\interfaces\fi\archive\Viernes\SICF_MOV.Vie"
-RespaldoSabado    = "\\GTMXQAS00\sapdata\interfaces\fi\archive\Sabado\SICF_MOV.Sab"
+ArchivoEnArchive  = "\\TXP\sapdata\interfaces\fi\archive\SICF_MOV.txt"
+RespaldoDomingo   = "\\TXP\sapdata\interfaces\fi\archive\Domingo\SICF_MOV.Dom"
+RespaldoLunes     = "\\TXP\sapdata\interfaces\fi\archive\Lunes\SICF_MOV.Lun"
+RespaldoMartes    = "\\TXP\sapdata\interfaces\fi\archive\Martes\SICF_MOV.Mar"
+RespaldoMiercoles = "\\TXP\sapdata\interfaces\fi\archive\Miercoles\SICF_MOV.Mie"
+RespaldoJueves    = "\\TXP\sapdata\interfaces\fi\archive\Jueves\SICF_MOV.Jue"
+RespaldoViernes   = "\\TXP\sapdata\interfaces\fi\archive\Viernes\SICF_MOV.Vie"
+RespaldoSabado    = "\\TXP\sapdata\interfaces\fi\archive\Sabado\SICF_MOV.Sab"
  
 strLog = ""
 
@@ -57,12 +57,12 @@ Set objFSO1 = CreateObject("Scripting.FileSystemObject")
 
 'Si falló alguna de las copias que realiza el programa zcpD19.cmd ==> lo notifica por medio de mail
 '==========================================================================================================
-'Espera 20 segundos a que se complete la acción de mover el archivo SICF_MOV.txt a \\GTMXQAS00\sapdata\interfaces\fi\archive
+'Espera 20 segundos a que se complete la acción de mover el archivo SICF_MOV.txt a \\TXP\sapdata\interfaces\fi\archive
 
 wscript.Sleep 20000
 
 If Not objFSO1.FileExists(ArchivoEnArchive) Then
-   strLog = "El archivo SICF_MOV.txt no fue copiado a \\GTMXQAS00\sapdata\interfaces\fi\archive en el servidor de TXP - favor revisar." & VbCrLf
+   strLog = "El archivo SICF_MOV.txt no fue copiado a \\TXP\sapdata\interfaces\fi\archive en el servidor de TXP - favor revisar." & VbCrLf
    FncSendmail strMailAddressFrom, strMailADDressTo, "Job BI_TODASPTAS-CUBO-MENSUAL - Archivo SICF_MOV.txt no fue copiado a archive en TXP", strLog
    wscript.quit 
 End If
@@ -159,7 +159,7 @@ if myweekday = 7 Then
 End If
 
 If RespaldoDiariOK = "No" Then
-   strLog = "Al parecer el archivo SICF_MOV.txt no pudo ser respaldado a la carpeta del día que corresponde bajo \\GTMXQAS00\sapdata\interfaces\fi\archive en el servidor de TXP - favor revisar que el archivo exista." & VbCrLf
+   strLog = "Al parecer el archivo SICF_MOV.txt no pudo ser respaldado a la carpeta del día que corresponde bajo \\TXP\sapdata\interfaces\fi\archive en el servidor de TXP - favor revisar que el archivo exista." & VbCrLf
    FncSendmail strMailAddressFrom, strMailADDressTo, "Job BI_TODASPTAS-CUBO-MENSUAL - Al parecer el archivo SICF_MOV.txt no pudo ser respaldado a la carpeta del día que corresponde en TXP", strLog
    wscript.quit
 End If

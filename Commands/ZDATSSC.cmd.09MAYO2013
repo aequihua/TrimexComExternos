@@ -1,0 +1,4 @@
+@echo off
+echo Copia archivo indicadores-cc.tx al Servidor \\gruma1011.grumamex.com\Datamart\Fuentes\SSC
+echo.
+copy \\sapdatamx\sapdata\interfaces\sd\Datamart\indicadores-cc.txt \\gruma1011.grumamex.com\Datamart\Fuentes\SSC

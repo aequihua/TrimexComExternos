@@ -1,17 +1,17 @@
 @echo off
-echo * Copia archivo a \\DELTA19\sharename *
+echo * Copia archivo a \\molmex1021.molmex.local\sharename *
 echo.
-if \\sapdatamx\sapdata\interfaces\fi\"%1"=="" goto error
-if \\sapdatamx\sapdata\interfaces\fi\"%2"=="" goto error
-if not exist \\sapdatamx\sapdata\interfaces\fi\%1 (
+if \\TXP\sapdata\interfaces\fi\"%1"=="" goto error
+if \\TXP\sapdata\interfaces\fi\"%2"=="" goto error
+if not exist \\TXP\sapdata\interfaces\fi\%1 (
   echo error: No existe el archivo %1
   goto end
 )
-date /t >  \\sapdatamx\sapdata\interfaces            \fi\log\%~n1.log
-time /t >> \\sapdatamx\sapdata\interfaces            \fi\log\%~n1.log
-copy       \\sapdatamx\sapdata\interfaces\fi\%1       \\delta19.gruma.com\%2
-move       \\sapdatamx\sapdata\interfaces\fi\%1       \\sapdatamx\sapdata\interfaces\fi\archive
-time /t >> \\sapdatamx\sapdata\interfaces\fi\%~n1.log
+date /t >  \\TXP\sapdata\interfaces            \fi\log\%~n1.log
+time /t >> \\TXP\sapdata\interfaces            \fi\log\%~n1.log
+copy       \\TXP\sapdata\interfaces\fi\%1       \\molmex1021.molmex.local\%2
+move       \\TXP\sapdata\interfaces\fi\%1       \\TXP\sapdata\interfaces\fi\archive
+time /t >> \\TXP\sapdata\interfaces\fi\%~n1.log
 goto end
 :error
 echo use:  %0 filename sharename

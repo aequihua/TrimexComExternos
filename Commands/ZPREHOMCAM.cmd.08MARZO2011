@@ -1,0 +1,7 @@
+@echo off
+echo Copia archivo hhc_precios_hc.txt al servidor GRUMA1145
+echo.
+w:
+cd w:\interfaces\sd\trigo\
+copy w:\interfaces\sd\trigo\precios_hcam.txt \\172.31.1.18\EntradaBDSinergiaN
+copy w:\interfaces\sd\trigo\precios_hcco.txt \\172.31.1.18\EntradaBDSinergiaN

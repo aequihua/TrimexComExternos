@@ -1,0 +1,90 @@
+ Volume in drive V is SapExeV
+ Volume Serial Number is EE8B-BD77
+
+ Directory of V:\usr\sap\MXP\SYS\exe\nuc\NTAMD64
+
+06/18/2007  10:42 AM             1,573 zap_docs.cmd
+04/18/2005  10:37 AM               401 zco02snd.cmd
+05/02/2007  04:26 PM               763 zco03uk.cmd
+05/07/2004  09:59 AM             1,222 zco21exp.cmd
+07/20/2007  11:19 AM             1,632 zco21g4.cmd
+06/01/2007  08:42 AM             1,709 zco21imp.cmd
+02/23/2007  04:20 PM               401 zco22snd.cmd
+08/19/2010  07:28 AM               184 ZCOBRANZAMES1_4.cmd
+08/19/2010  07:33 AM               184 ZCOBRANZAMES2_4.cmd
+08/19/2010  07:35 AM               184 ZCOBRANZAMES3_4.cmd
+08/19/2010  07:38 AM               184 ZCOBRANZAMES4_4.cmd
+02/25/2008  05:13 PM             1,182 zcolinas22.cmd
+04/18/2005  02:57 PM               248 zcolinas_02.cmd
+06/20/2006  02:32 PM               415 zcopyedi.cmd
+04/21/2008  10:28 AM                68 zCopyEdosCta.cmd
+08/18/2010  01:24 PM               447 zcpD19-erroneo.cmd
+04/01/2004  09:39 AM               435 zcpD19-Ver 1 18Ago2010.cmd
+04/01/2004  09:39 AM               435 zcpD19.cmd
+11/17/2006  10:06 AM               394 zcpdelta19.cmd
+03/22/2006  06:25 PM             1,197 zcped01.cmd
+02/05/2008  04:47 PM               470 zcpMXP-DE19.cmd
+10/06/2010  02:39 PM               171 zcp_1011.cmd
+10/06/2010  02:57 PM               832 zcp_catasil.cmd
+10/06/2010  02:12 PM               166 zcp_gruma1011.cmd
+03/22/2006  04:34 PM               551 ZCUSTOMER.cmd
+03/10/2004  12:55 PM               417 zcv00snd.cmd
+12/05/2008  04:20 PM               174 ZDEPOSITOS.cmd
+09/03/2009  03:39 PM               246 ZDIRACTIVO.cmd
+02/22/2010  05:15 PM               170 ZDIRACTIVOCAMBIOS.cmd
+03/09/2005  10:45 AM               347 zdmfinanzas.cmd
+07/31/2007  10:05 AM            10,237 zdmSIM.cmd
+04/14/2008  03:38 PM             1,629 zdmsimnew.cmd
+03/31/2008  01:18 PM               904 zdmsimprh.cmd
+09/05/2007  04:20 PM               961 zdmsim_cunitarios.cmd
+09/05/2007  04:22 PM               820 zdmsim_ege.cmd
+08/20/2007  03:37 PM               649 zdmsim_empaque.cmd
+09/05/2007  04:19 PM               956 zdmsim_energeticos.cmd
+11/12/2008  04:48 PM               736 zdmsim_factagre.cmd
+09/05/2007  04:24 PM               905 zdmsim_nejayote.cmd
+08/20/2007  03:38 PM               654 zdmsim_produccion.cmd
+09/05/2007  04:25 PM               974 zdmsim_subproductos.cmd
+10/27/2005  08:13 AM               384 zedi940weber.cmd
+10/27/2005  08:15 AM               370 zedi945weber.cmd
+01/12/2004  12:45 PM               164 zedibiglots.cmd
+07/29/2005  04:02 PM               469 zedicolinas03.cmd
+02/08/2007  06:33 PM               614 zedipenske1.cmd
+02/08/2007  06:34 PM               630 zedipenske2.cmd
+11/25/2003  12:10 PM               191 zedisafewayuk.cmd
+07/15/2003  06:14 PM               164 zedisend.cmd
+08/02/2005  09:59 AM               347 zediuscoldstore.cmd
+07/15/2003  06:25 PM               173 zediwalmart.cmd
+04/30/2007  04:42 PM             7,110 ZFTPEd01.cmd
+03/22/2006  04:48 PM             6,644 ZFTPEd02.cmd
+05/07/2004  09:59 AM             1,222 ZG4SAPDownl.cmd
+06/14/2007  11:24 AM             1,283 ZG4SAPupl.cmd
+09/05/2008  02:04 PM             5,602 zhhc_fromsap.cmd
+01/12/2009  05:52 PM             9,600 zhhc_tosap-t.cmd
+03/06/2009  04:22 PM               484 zhrad.cmd
+04/13/2006  10:20 AM               384 ZHRGROTE.cmd
+12/18/2008  08:44 AM             1,032 zhrintpro Ruben Aguilar.cmd
+06/17/2010  09:17 AM             1,034 zhrintpro.cmd
+04/16/2007  02:47 PM               773 zhrintpro08-1216.cmd
+12/18/2008  08:44 AM             1,032 zhrintproV08-1217.cmd
+06/17/2010  09:10 AM               800 zhrintxpro.cmd
+04/16/2007  04:08 PM               540 zhrintxpro08-1216.cmd
+12/18/2008  08:42 AM               798 zhrintxproV08-1217.cmd
+05/07/2009  11:52 AM             3,768 ZHRSIPRO_NEW.cmd
+08/19/2005  10:49 AM               389 zipfusgv.cmd
+11/27/2007  12:00 PM               397 zipfusgv2.cmd
+08/22/2010  03:23 AM               329 ZLOMMRE.cmd
+08/04/2003  12:24 PM               533 zordinv_tempe.cmd
+12/17/2009  10:18 AM               269 ZPREHOMCAM.cmd
+10/08/2010  03:04 PM               201 ZSICF.cmd
+09/12/2007  08:41 AM             3,546 zsicf02.cmd
+09/12/2007  08:41 AM             3,546 zsicf03.cmd
+01/31/2005  04:40 PM             1,175 zsicf02.cmd-250705
+12/04/2008  02:43 PM               327 zsicf_colinas02.cmd
+12/13/2007  07:15 PM               169 zsicf_test.cmd
+09/03/2010  09:55 AM               331 ZSIL_INVENTARIOS.cmd
+07/31/2007  09:59 AM               577 zSIM_CierredeMes.cmd
+09/24/2010  12:31 PM               216 zSIM_fProdisa.cmd
+08/22/2010  09:00 AM               344 ZSIM_RM5.cmd
+06/16/2010  04:31 PM               311 ZSIM_RM5.cmd-VER1-17AGO2010
+              83 File(s)         94,499 bytes
+               0 Dir(s)     674,365,440 bytes free

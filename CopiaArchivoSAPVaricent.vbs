@@ -37,16 +37,29 @@ MyMinute = Right("0" & Minute(Time),2)
 
 SufijoFile = MyYear & MyMonth & MyDay & MyHour & MyMinute
 
-File1 = "\\grumash.grumacntrl.com\VARICENP\SAPVaricent\sapvaricent.txt"
-File2 = "\\grumash.grumacntrl.com\VARICENP\SAPVaricent\sapvaricent" & SufijoFile & ".txt"
+'File1 = "\\MOLMEXCOM\RH\sapvaricent.txt"
+File0 = "\\sapdatatx\sapdata\Interfaces\fi\Molinera\sapvari-tx.txt"
+File1 = "\\MOLMEXCOM\RH\sapvari-tx.txt"
+File2 = "\\MOLMEXCOM\RH\sapvari-tx" & SufijoFile & ".txt"
+File3 = "\\GTMXBI00\RH\sapvari-tx.txt"
+File4 = "\\GTMXBI00\RH\sapvari-tx" & SufijoFile & ".txt"
+
+If objFSO1.FileExists(File0) Then
+   objFSO1.CopyFile File0, File1, True
+   objFSO1.CopyFile File0, File3, True
+End If
 
 If objFSO1.FileExists(File1) Then
    objFSO1.CopyFile File1, File2, True
 End If
 
+If objFSO1.FileExists(File3) Then
+   objFSO1.CopyFile File3, File4, True
+End If
+
 If NOT objFSO1.FileExists(File1) or NOT objFSO1.FileExists(File2) Then
    Now1 = Now
-   strLog = "*** No se encontró el archivo sapvaricent.txt o no se pudo copiar - Favor REVISAR carpeta E:\VARICENP\SAPVaricent en servidor gruma1438.grumacntrl.com" & " - Date-Time: " & Now1 & " ***"
+   strLog = "*** No se encontró el archivo sapvari-tx.txt o no se pudo copiar - Favor REVISAR carpeta E:\VARICENP\SAPVari-tx en servidor gruma1438.grumacntrl.com" & " - Date-Time: " & Now1 & " ***"
    FncSendmail strMailAddressFrom,strMailADDressTo,"Job ZHRVARICEN_MXP - Archivos sapvaricent.txt procesados", strLog
 End If
 

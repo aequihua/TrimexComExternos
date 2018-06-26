@@ -1,0 +1,7 @@
+@echo off
+echo Copia archivo ProductosPlanta.txt y LotesPlanta.txt al servidor GRUMA1145
+echo.
+w:
+cd w:\interfaces\sd\prodisa
+copy /Y /V w:\interfaces\sd\prodisa\ProductosPlanta.txt \\gruma1145.grumamex.com\EntradaBdInventario
+copy /Y /V w:\interfaces\sd\prodisa\LotesPlanta.txt \\gruma1145.grumamex.com\EntradaBdInventario

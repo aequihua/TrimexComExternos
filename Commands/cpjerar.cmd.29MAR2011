@@ -1,0 +1,17 @@
+@echo off
+echo Copia archivos de corporativo
+echo.
+w:
+cd w:\interfaces\fi\
+copy w:sicf*.txt \\delta19.gruma.com\fuentesp\sicf*.txt
+copy w:sicf.rep \\delta19.gruma.com\fuentesp
+if exist \\delta19.gruma.com\fuentesp\sicf.rep (
+  echo.
+  echo Archivos copiados.
+  del \\delta19.gruma.com\fuentesp\sicf.rep
+  move sicf*.txt .\archive
+) else (
+echo.
+echo ERROR == Archivos no copiados.
+)
+echo Fin copia archivos de corporativo

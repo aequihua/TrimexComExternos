@@ -2,27 +2,19 @@
 echo Copia archivos catalogos RH.
 echo.
 
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_Empleados.txt        \\gruma1023.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\catpuest.txt             \\gruma1023.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\catpuesterr.txt          \\gruma1023.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\catunid.txt              \\gruma1023.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\catsociedades.txt        \\gruma1023.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_AreasFuncionales.txt \\gruma1023.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_Movimientos.txt      \\gruma1023.grumamex.com\ftproot$
-
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_Empleados.txt        \\grumaweb00.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\catpuest.txt             \\grumaweb00.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\catpuesterr.txt          \\grumaweb00.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\catunid.txt              \\grumaweb00.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\catsociedades.txt        \\grumaweb00.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_AreasFuncionales.txt \\grumaweb00.grumamex.com\ftproot$
-copy \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_Movimientos.txt      \\grumaweb00.grumamex.com\ftproot$
-
-move \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_Empleados.txt        \\sapdatamx\sapdata\interfaces\fi\archive
-move \\sapdatamx\sapdata\interfaces\HR\catalogos\catpuest.txt             \\sapdatamx\sapdata\interfaces\fi\archive
-move \\sapdatamx\sapdata\interfaces\HR\catalogos\catpuesterr.txt          \\sapdatamx\sapdata\interfaces\fi\archive
-move \\sapdatamx\sapdata\interfaces\HR\catalogos\catunid.txt              \\sapdatamx\sapdata\interfaces\fi\archive
-move \\sapdatamx\sapdata\interfaces\HR\catalogos\catsociedades.txt        \\sapdatamx\sapdata\interfaces\fi\archive
-move \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_AreasFuncionales.txt \\sapdatamx\sapdata\interfaces\fi\archive
-move \\sapdatamx\sapdata\interfaces\HR\catalogos\Cat_Movimientos.txt      \\sapdatamx\sapdata\interfaces\fi\archive
+copy \\sapdatatx\sapdata\interfaces\HR\catalogos\Cat_Empleados_TRX.txt        \\Molmexweb\ftproot$
+copy \\sapdatatx\sapdata\interfaces\HR\catalogos\catpuest_TRX.txt             \\Molmexweb\ftproot$
+copy \\sapdatatx\sapdata\interfaces\HR\catalogos\catpuesterr_TRX.txt          \\Molmexweb\ftproot$
+copy \\sapdatatx\sapdata\interfaces\HR\catalogos\catunid_TRX.txt              \\Molmexweb\ftproot$
+copy \\sapdatatx\sapdata\interfaces\HR\catalogos\catsociedades_TRX.txt        \\Molmexweb\ftproot$
+copy \\sapdatatx\sapdata\interfaces\HR\catalogos\Cat_AreasFuncio_TRX.txt      \\Molmexweb\ftproot$
+copy \\sapdatatx\sapdata\interfaces\HR\catalogos\Cat_Movimientos_TRX.txt      \\Molmexweb\ftproot$
+echo. Moviendo a archive.
+move \\sapdatatx\sapdata\interfaces\HR\catalogos\Cat_Empleados_TRX.txt        \\sapdatatx\sapdata\interfaces\fi\archive
+move \\sapdatatx\sapdata\interfaces\HR\catalogos\catpuest_TRX.txt             \\sapdatatx\sapdata\interfaces\fi\archive
+move \\sapdatatx\sapdata\interfaces\HR\catalogos\catpuesterr_TRX.txt          \\sapdatatx\sapdata\interfaces\fi\archive
+move \\sapdatatx\sapdata\interfaces\HR\catalogos\catunid_TRX.txt              \\sapdatatx\sapdata\interfaces\fi\archive
+move \\sapdatatx\sapdata\interfaces\HR\catalogos\catsociedades_TRX.txt        \\sapdatatx\sapdata\interfaces\fi\archive
+move \\sapdatatx\sapdata\interfaces\HR\catalogos\Cat_AreasFuncio_TRX.txt      \\sapdatatx\sapdata\interfaces\fi\archive
+move \\sapdatatx\sapdata\interfaces\HR\catalogos\Cat_Movimientos_TRX.txt      \\sapdatatx\sapdata\interfaces\fi\archive
 echo Fin copia archivos catalogos RH.

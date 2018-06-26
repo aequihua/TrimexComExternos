@@ -1,0 +1,23 @@
+@echo off
+echo Copia archivo hhc_precios_hc.txt al servidor GRUMA1145
+echo.
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\precios_hcam.txt \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\precios_hcco.txt \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3250.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3350.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3400.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3425.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3625.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3750.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3800.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3850.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3950.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_4000.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_4400.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_4420.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_4460.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_4520.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_4540.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_4560.txt     \\172.31.1.18\EntradaBDSinergiaN
+copy \\sapdatamx\sapdata\interfaces\sd\trigo\BON_3775.txt     \\172.31.1.18\EntradaBDSinergiaN
+

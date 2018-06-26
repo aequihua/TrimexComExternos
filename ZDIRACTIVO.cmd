@@ -1,7 +1,7 @@
 @echo off
-echo Copia archivo altas.txt y bajas.txt al servidor RIOPLATA11
-REM copy \\sapdatamx\sapdata\interfaces\hr\altas.txt \\rioplata11.gruma.com\SAPInterface\
-REM copy \\sapdatamx\sapdata\interfaces\hr\bajas.txt \\rioplata11.gruma.com\SAPInterface\
+echo Copia archivo altas.txt y bajas.txt al servidor Molmex1201
+REM copy \\sapdatatx\sapdata\interfaces\hr\altas.txt \\rioplata11.gruma.com\SAPInterface\
+REM copy \\sapdatatx\sapdata\interfaces\hr\bajas.txt \\rioplata11.gruma.com\SAPInterface\
 REM rem Change 30694, 24/10/2013
-copy /Z /Y \\sapdatamx\sapdata\interfaces\hr\altas.txt \\GRUMA1201\SAPInterface\
-copy /Z /Y \\sapdatamx\sapdata\interfaces\hr\bajas.txt \\GRUMA1201\SAPInterface\
+copy /Z /Y \\sapdatatx\sapdata\interfaces\hr\altas.txt \\Molmex1201\SAPInterface\
+copy /Z /Y \\sapdatatx\sapdata\interfaces\hr\bajas.txt \\Molmex1201\SAPInterface\

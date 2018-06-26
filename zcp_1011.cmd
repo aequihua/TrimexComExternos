@@ -1,5 +1,5 @@
 @echo off
-REM Copia archivo gastos.txt al servidor GRUMA1011
+REM Copia archivo gastos.txt al servidor GTMXBI00
 echo.
-copy \\sapdatamx\sapdata\interfaces\mm\transportes.txt \\gruma1011\datamart\fuentes\sil\
+copy \\txp\sapdata\interfaces\SD\transportes.txt \\gtmxbi00.molmex.local\dm_SIL\Fuentes /Z
 

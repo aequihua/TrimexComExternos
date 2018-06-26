@@ -1,0 +1,35 @@
+@echo off
+echo Copia HHC PRODISA %1 AM
+echo.
+w:
+cd w:\interfaces\sd\prodisa
+if "%1" == "0130" goto AM0130
+if "%1" == "0500" goto AM0500
+if "%1" == "5050" goto AM5050
+:ERROR1
+echo Use parametro valido [0130] o [0500].
+goto FIN
+:AM0130
+copy w:hhc_municipios.txt \\172.31.1.18\EntradaBDProdisa
+copy w:hhc_estados.txt \\172.31.1.18\EntradaBDProdisa
+copy w:materiales.txt \\172.31.1.18\EntradaBDProdisa
+copy w:hhc_centros.txt \\172.31.1.18\EntradaBDProdisa
+copy w:clientes_gral.txt \\172.31.1.18\EntradaBDProdisa
+copy w:clientes_sociedad.txt \\172.31.1.18\EntradaBDProdisa
+copy w:clientes_ventas.txt \\172.31.1.18\EntradaBDProdisa
+copy w:gestion_creditos.txt \\172.31.1.18\EntradaBDProdisa
+copy w:hhc_gposven.txt \\172.31.1.18\EntradaBDProdisa
+copy w:hhc_ofnavtas.txt \\172.31.1.18\EntradaBDProdisa
+copy w:hhc_sociedad.txt \\172.31.1.18\EntradaBDProdisa
+copy w:hhc_esquema.txt \\172.31.1.18\EntradaBDProdisa
+cd w:\interfaces\sd\gimsa
+copy w:agentes_dm_prodisa.txt \\172.31.1.18\EntradaBDProdisa
+goto FIN
+:AM0500
+copy w:hhc_invini.txt \\172.31.1.18\EntradaBDProdisa
+copy w:hhc_vtasacum.txt \\172.31.1.18\EntradaBDProdisa
+goto FIN
+:AM5050
+copy w:hhc_invini_5050.txt \\172.31.1.18\EntradaBDProdisa
+:FIN
+echo Fin copia archivos HHC PRODISA %1 AM.

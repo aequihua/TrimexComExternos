@@ -1,1 +1,1 @@
-cscript.exe \\sapmxp\ComandosExternosMXP\CopiaArchivoSAPVaricent.vbs
+cscript.exe \\txp\ComandosExternosTXP\CopiaArchivoSAPVaricent.vbs

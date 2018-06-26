@@ -1,0 +1,5 @@
+@echo off
+REM Copia archivo gastos.txt al servidor GRUMA1011
+echo.
+copy \\cimxp.mx.gruma.com\sapdata\interfaces\mm\gastos.txt \\gruma1011\datamart\fuentes\sil\
+

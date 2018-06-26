@@ -1,0 +1,30 @@
+@echo off
+echo Copia HHC SINERGIA NEW.
+echo.
+w:
+copy cartera_normal.txt \\172.31.1.18\EntradaBDSinergian\hhc_cobranza.txt
+cd w:\interfaces\sd\sinergianew
+copy w:agentes_dm.txt \\172.31.1.18\EntradaBDSinergian\hhc_agentes_t.txt
+copy w:aggimsa_dm.txt \\172.31.1.18\EntradaBDSinergian\hhc_agentes_g.txt
+copy w:clientes_gral.txt \\172.31.1.18\EntradaBDSinergian\clientes_gral.txt
+copy w:clientes_sociedad.txt \\172.31.1.18\EntradaBDSinergian\clientes_sociedad.txt
+copy w:clientes_ventas.txt \\172.31.1.18\EntradaBDSinergian\clientes_ventas.txt
+copy w:facturas.txt \\172.31.1.18\EntradaBDSinergian\facturas.txt
+copy w:gestion_creditos.txt \\172.31.1.18\EntradaBDSinergian\clientes_creditos.txt
+copy w:material_gi.txt \\172.31.1.18\EntradaBDSinergian\hhc_materiales_g.txt
+copy w:material_tr.txt \\172.31.1.18\EntradaBDSinergian\hhc_materiales_t.txt
+copy w:hhc_cartera.txt \\172.31.1.18\EntradaBDSinergian\hhc_cartera.txt
+copy w:hhc_centros.txt \\172.31.1.18\EntradaBDSinergian\hhc_centros.txt
+copy w:hhc_estados.txt \\172.31.1.18\EntradaBDSinergian\hhc_estados.txt
+copy w:hhc_gposven.txt \\172.31.1.18\EntradaBDSinergian\hhc_gposven.txt
+copy w:hhc_motivos.txt \\172.31.1.18\EntradaBDSinergian\hhc_mcancel.txt
+copy w:hhc_municipios.txt \\172.31.1.18\EntradaBDSinergian\hhc_municipios.txt
+copy w:hhc_ofnavtas.txt \\172.31.1.18\EntradaBDSinergian\hhc_ofnavtas.txt
+copy w:hhc_pedspend.txt \\172.31.1.18\EntradaBDSinergian\hhc_pedspend.txt
+copy w:hhc_sociedad.txt \\172.31.1.18\EntradaBDSinergian\hhc_companias.txt
+copy w:hhc_tipoprod.txt \\172.31.1.18\EntradaBDSinergian\hhc_tipoprod.txt
+copy w:hhc_esquema.txt \\172.31.1.18\EntradaBDSinergian\hhc_esquema.txt
+copy w:precios_pv24.txt \\172.31.1.18\EntradaBDSinergian\hhc_preciospreventa.txt
+REM W.O 34494
+copy w:BancosHHC.txt \\172.31.1.18\EntradaBDSinergian\BancosHHC.txt
+echo Fin copia archivos HHC SINERGIA NEW.

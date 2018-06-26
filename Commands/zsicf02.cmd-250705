@@ -1,0 +1,40 @@
+@echo off
+echo Copia archivos SICF al servidor COLINAS02
+echo.
+w:
+cd w:\interfaces\fi\if044\newdata
+if "%1" == "EUROPE" goto EUROPE
+if "%1" == "HOLANDA" goto HOLANDA
+if "%1" == "MISSION" goto MISSION
+if "%1" == "GASTOS" goto GASTOS
+if "%1" == "ESTRUCTGTOS" goto ESTRUCTGTOS
+:ERROR1
+echo Use: A valid parameter <EUROPE> or <MISSION> or <GASTOS> or <HOLANDA>.
+goto FIN
+:HOLANDA
+echo Copia archivos SICF HOLANDA.
+copy w:sicf*nl*.txt \\colinas02.missionfoods.com\sapfiles\SICF
+move w:sicf*nl*.txt ..\archive
+goto FIN
+:EUROPE
+echo Copia archivos SICF EUROPE.
+copy w:sicf*gb*.txt \\colinas02.missionfoods.com\sapfiles\SICF
+move w:sicf*gb*.txt ..\archive
+goto FIN
+:MISSION
+echo Copia archivos SICF MISSION.
+copy w:sicf*.txt \\colinas02.missionfoods.com\sapfiles\SICF
+move w:sicf*.txt ..\archive
+goto FIN
+:GASTOS
+echo Copia archivos SICF GASTOS.
+copy w:sicfmovexp.txt \\colinas02.missionfoods.com\sapfiles\SICF
+move w:sicfmovexp.txt ..\archive
+goto FIN
+:ESTRUCTGTOS
+echo Copia archivos SICF ESTRUCTURAS GASTOS.
+copy w:sicfexp*.txt \\colinas02.missionfoods.com\sapfiles\SICF
+move w:sicfexp*.txt ..\archive
+:FIN
+echo.
+echo Fin copia archivos SICF

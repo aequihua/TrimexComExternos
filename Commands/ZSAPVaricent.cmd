@@ -1,0 +1,1 @@
+cscript.exe \\sapmxp\ComandosExternosMXP\CopiaArchivoSAPVaricent.vbs

@@ -6,9 +6,9 @@ set Fecha=%DATE%
 set Hora=%TIME%
 echo %Fecha% %Hora%
 echo.
-if not exist \\gruma1201\sapinterface\SAPFile.csv goto FIN
-copy \\gruma1201\sapinterface\SAPFile.csv \\sapdatamx\sapdata\interfaces\HR
-copy \\gruma1201\sapinterface\SAPFile.csv \\sapdatamx\sapdata\interfaces\HR\archive
+if not exist \\molmex1201\sapinterface\SAPFileMolmex.csv goto FIN
+copy \\molmex1201\sapinterface\SAPFileMolmex.csv \\sapdatatx\sapdata\interfaces\HR
+copy \\molmex1201\sapinterface\SAPFileMolmex.csv \\sapdatatx\sapdata\interfaces\HR\archive
 echo Se copió el archivo con éxito.
 Exit
 :FIN
